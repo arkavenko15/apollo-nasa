@@ -18,16 +18,23 @@
                 <div class="col-xl-2 logo">                                         
                         <img class="logo-img" src="images/logo.webp" alt="">                   
                 </div>
-                <div class="col-xl-10">
+                <div class="col-xl-8">
                     <ul class="main-menu">
-                        <li><a href="/">home</a></li>
-                        <li><a href="/">who's safe pluto</a></li>
-                        <li><a href="/">roadmap</a></li>
-                        <li><a href="/">giveaways</a></li>
-                        <li><a href="/">coming soon</a></li>
-                        <li><a href="/">testimonials</a></li>
-                        <li><a href="/">legal</a></li>
+                        <li class="home"><div class="menu-item" >home</div></li>
+                        <li class="live"><div class="menu-item">live view</div></li>
+                        <li class="roadmap"><div class="menu-item">roadmap</div></li>
+                        <li class="giveaway"><div class="menu-item">giveaways</div></li>
+                        <li><div class="menu-item">coming soon</div></li>
                     </ul>
+                </div>
+                <div class="col-xl-2 switcher">
+                    <div class="switchers">
+                        <p><img src="images/moon.png" alt=""></p>
+                        <label for="" class="switch-btn">
+                            <span class="slider-round-left"></span>
+                        </label>
+                        <p><img src="images/sun.png" alt=""></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,13 +45,6 @@
         </div>
         <div class="cotainer-board">
             <img class="board-img" src="images/block.jpg" alt="">
-            <div class="switcher">
-                <p><img src="images/moon.png" alt=""></p>
-                <label for="" class="switch-btn">
-                    <span class="slider-round-left"></span>
-                </label>
-                <p><img src="images/sun.png" alt=""></p>
-            </div>
         </div>
 
         <div class="container">
@@ -55,10 +55,13 @@
                         <div class="title">
                             smart contract
                         </div>
-                        <div class="token-line">0xf40153fb3f5db22f6843fc63835a3a870ed846d3</div>
-                        <button class="copy-btn">
-                            Copy
-                        </button>
+                        <input class="token-line link" value="0xf40153fb3f5db22f6843fc63835a3a870ed846d3"/>
+                        <div class="copy-part">
+                            <button class="copy-btn">
+                                Copy
+                            </button><span class="copied">Copied</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -96,56 +99,38 @@
                 </div>
             </div>
         </div>
-        <div class="hashtag-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 hashtags">
-                        <div class="title">HASHTAGS SCROLLER</div>
-                        <div class="hashtag-scroller">
-                            <b class="hash-items">  
-                                    #SafePluto #FairLaunch #NoDev #NoAllocation #TheBestCommunity #100Hours100Million$ #SafePlutoGivesBack #FromTheCommunity #CrazyRewards #FairLaunch
-                                    #NoDev #NoAllocation #TheBestCommunity #100Hours100Million$ #SafePlutoGivesBack #FromTheCommunity #CrazyRewards #FairLaunch #NoDev #NoAllocation 
-                                    #TheBestCommunity #100Hours100Million$ #SafePlutoGivesBack #FromTheCommunity #CrazyRewards #FairLaunch #NoDev #NoAllocation #TheBestCommunity 
-                                    #100Hours100Million$ #SafePlutoGivesBack #FromTheCommunity #CrazyRewards 
-                            </b>
-                        </div>
-                    <div class="title">WHY JOIN SAFEPLUTO ?</div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
-            <div class="row properties">
+            <div class="row properties roadmap-visible">
                 <div class="col-xl-4">
                     <div class="prop-item">                        
                         <img src="images/item-2.png" alt="" class="prop-img">
                         <div class="prop-title">COMMUNITY DRIVEN</div>
-                        <div class="prop-description">SafePluto is a community-driven cryptocurrency that operates in the growing and fast-moving digital currency space, creating wealth for everyone on the way to PLUTO. That's what PL69 wanted before Doge betrayed him and left him for dead in a dark alley. But PL69 is coming for revenge, he can’t wait for everyone to know the truth and &nbsp;burry that doge dog 6 feet under…</div>
+                        <div class="prop-description text">SafePluto is a community-driven cryptocurrency that operates in the growing and fast-moving digital currency space, creating wealth for everyone on the way to PLUTO. That's what PL69 wanted before Doge betrayed him and left him for dead in a dark alley. But PL69 is coming for revenge, he can’t wait for everyone to know the truth and &nbsp;burry that doge dog 6 feet under…</div>
                     </div>
                 </div>
                 <div class="col-xl-4">
                     <div class="prop-item">
                         <img src="images/item-1.png" alt="" class="prop-img">
                         <div class="prop-title">AUTOMATIC LIQUIDITY</div>
-                        <div class="prop-description">Every transaction automatically generates liquidity and supports the end-to-end decentralized ecosystem. This is the way PL69 always wants it to be.</div>
+                        <div class="prop-description text">Every transaction automatically generates liquidity and supports the end-to-end decentralized ecosystem. This is the way PL69 always wants it to be.</div>
                     </div>
                 </div>
                 <div class="col-xl-4">
                     <div class="prop-item">
                         <img src="images/item-3.png" alt="" class="prop-img">
                         <div class="prop-title">UNLIMITED REWARDS</div>
-                        <div class="prop-description">PL69 wants Holders to earn rewards from every transaction made within the 69 network as they watch their SafePluto balance grow. PL69 aims for Pluto not mars or even the moon. PL69 is here to show you how it is done dawg. PL69 gives away real rewards, and be dropping on you Sneaks and RMs….you haven’t seen anything yet.&nbsp;</div>
+                        <div class="prop-description text giveaway-visible">PL69 wants Holders to earn rewards from every transaction made within the 69 network as they watch their SafePluto balance grow. PL69 aims for Pluto not mars or even the moon. PL69 is here to show you how it is done dawg. PL69 gives away real rewards, and be dropping on you Sneaks and RMs….you haven’t seen anything yet.&nbsp;</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="title">safepluto giveaways</div>
+                    <div class="title ">safepluto giveaways</div>
                     <img class="giveaway-img" src="images/giveaway.jpg" alt="">
-                    <p class="giveaway-info-title">$100,000 GIVEAWAY ANNOUNCEMENT!</p>
-                    <p class="giveaway-info">For more information about our exclusive giveaways, please click below!</p>
+                    <p class="giveaway-info-title text">$100,000 GIVEAWAY ANNOUNCEMENT!</p>
+                    <p class="giveaway-info text">For more information about our exclusive giveaways, please click below!</p>
                    
                 </div>
             </div>
@@ -159,12 +144,12 @@
                 </div>
             </div>
         </div>
-        <iframe class="dex-guru" src="https://dex.guru/"></iframe>
+        <iframe class="dex-guru live-view" src="https://dex.guru/"></iframe>
     </main>
     <footer>
-        <p>Copyright © 2021 SafePluto is operated by OverOne Infinity Club Limited incorporated in the</p>
-        <p> Free Republic of Liberland under Number 22014</p>
-        <p>SafePluto.io - All Rights Reserved.</p>
+        <p class="text">Copyright © 2021 SafePluto is operated by OverOne Infinity Club Limited incorporated in the</p>
+        <p class="text"> Free Republic of Liberland under Number 22014</p>
+        <p class="text">SafePluto.io - All Rights Reserved.</p>
     </footer>
     
     <script src="app.js"></script> 
