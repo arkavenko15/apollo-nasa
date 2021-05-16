@@ -256,6 +256,10 @@ main{
     text-align: center;
     padding: 20px 0;
 }
+.dex{
+    display: flex;
+    justify-content: center;
+}
 .dex-guru{
     width: 90%;
     height: 1000px;
