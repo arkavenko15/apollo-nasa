@@ -88,7 +88,7 @@ header{
     vertical-align: middle;
 }
 main{
-    background-color: #181d23;
+    background-color: silver;
 }
 .smart-contract{
     height: 300px;
@@ -266,7 +266,7 @@ main{
 }
 footer{
     height: 150px;
-    background-color: #181d23;
+    background-color: silver;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -50,11 +50,11 @@ switchButton.addEventListener('click',function(){
     {
         sliderRoundLeft.classList.remove("slider-round-left")
         sliderRoundLeft.classList.add("slider-round-right")
-        body.setAttribute("style", "background-color:silver; ");
+        body.setAttribute("style", "background-color:#181d23; ");
         for(let i=0;i<text.length;i++){
             text[i].setAttribute("style","color :#4b4b4b")
         }
-        footer.setAttribute("style", "background-color:silver; ");
+        footer.setAttribute("style", "background-color:#181d23; ");
         for(let i=0;i<link.length;i++){
             link[i].setAttribute("style","color :#4b4b4b")
         }
@@ -64,8 +64,8 @@ switchButton.addEventListener('click',function(){
 
         sliderRoundLeft.classList.add("slider-round-left");
         sliderRoundLeft.classList.remove("slider-round-right");
-        body.setAttribute("style", "background-color:#181d23; ");
-        footer.setAttribute("style", "background-color:#181d23; ");
+        body.setAttribute("style", "background-color:silver; ");
+        footer.setAttribute("style", "background-color:silver; ");
     }
 })
 
