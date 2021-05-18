@@ -44,17 +44,21 @@ let body = document.querySelector("main")
 let footer = document.querySelector("footer")
 let text = document.querySelectorAll(".text")
 let link = document.querySelectorAll(".link")
+let description = document.querySelectorAll(".description")
 console.log(link)
 switchButton.addEventListener('click',function(){
     if(sliderRoundLeft.classList.contains("slider-round-left"))
     {
         sliderRoundLeft.classList.remove("slider-round-left")
         sliderRoundLeft.classList.add("slider-round-right")
-        body.setAttribute("style", "background-color:#181d23; ");
+        body.setAttribute("style", "background-color:#3d444d; ");
         for(let i=0;i<text.length;i++){
             text[i].setAttribute("style","color :#4b4b4b")
         }
-        footer.setAttribute("style", "background-color:#181d23; ");
+        for(let i=0;i<description.length;i++){
+            description[i].setAttribute("style","color :#ffffff")
+        }
+        footer.setAttribute("style", "background-color:#3d444d; ");
         for(let i=0;i<link.length;i++){
             link[i].setAttribute("style","color :#4b4b4b")
         }
@@ -64,8 +68,11 @@ switchButton.addEventListener('click',function(){
 
         sliderRoundLeft.classList.add("slider-round-left");
         sliderRoundLeft.classList.remove("slider-round-right");
-        body.setAttribute("style", "background-color:silver; ");
-        footer.setAttribute("style", "background-color:silver; ");
+        body.setAttribute("style", "background-color: rgb(238, 238, 238); ");
+        footer.setAttribute("style", "background-color: rgb(238, 238, 238); ");
+        for(let i=0;i<description.length;i++){
+            description[i].setAttribute("style","color :#1f262f")
+        }
     }
 })
 
@@ -76,12 +83,7 @@ roadmap.addEventListener('click',function(){
     roadmapVisible.scrollIntoView()
 })
 //
-let giveaway = document.querySelector('.giveaway')
-let giveawayVisible = document.querySelector('.giveaway-visible')
-giveaway.addEventListener('click',function(){
-    giveawayVisible.scrollIntoView()
-})
-//
+
 let live = document.querySelector('.live');
 let liveVisible =document.querySelector('.live-view')
 live.addEventListener('click',function(){
@@ -92,15 +94,17 @@ let home = document.querySelector('.home')
 home.addEventListener('click',function(){
     $('body,html').animate({scrollTop:0},2000);
 })
-//COPY TEXT
-let copy = document.querySelector('.copy-btn')
-let copied = document.querySelector('.copied')
-copy.addEventListener('click', function(){
-    let linkLine = document.querySelector('.link');
-    linkLine.select()
-    document.execCommand("copy");
-    copied.setAttribute("style", "display:block;");
-    $('.copied').fadeOut(2000);
-         
-})
+
+
+//SLIDER
+$(document).ready(function(){
+    $('.coin-description').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+});
+});
+              
 

@@ -13,7 +13,7 @@ input:focus
     outline: none;
 }
 body{
-    font-family: 'Goblin One', cursive;
+    font-family: 'Raleway', sans-serif;
     background-color: #1f262f;
     
 }
@@ -41,6 +41,7 @@ header{
     height: 120px;
     background: #0F1C75;
     position: fixed;
+    top: 0px;
     width: 100%;
     z-index: 1000;
 }
@@ -60,8 +61,8 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     color: #909090;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 800;
     line-height: 100px;
     padding: 10px 0px;
 }
@@ -73,14 +74,12 @@ header{
     margin-top: 3px;
 }
 .board-img{
-    width: 70%;
+    width: 100%;
     border: 3px solid #666565;
 }
-.cotainer-board{
-    display: flex;
-    justify-content: center;
+.container-board{
     padding-top: 40px;
-    position: relative;
+    padding-bottom: 40px;
 }
 .logo-img{
     width: 70%;
@@ -88,23 +87,9 @@ header{
     vertical-align: middle;
 }
 main{
-    background-color: silver;
+    background-color: rgb(238, 238, 238);
 }
-.smart-contract{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.link{
-    width: 700px;
-    background-color: transparent;
-    border: none;
-    color: silver;
-    font-size: 30px;
-    font-weight: 500;
-}
+
 
 
 .title{
@@ -113,6 +98,7 @@ main{
     font-size: 40px;
     text-align: center;
     padding: 30px 0;
+    font-weight: 800;
 }
 .copy-btn{
     height: 80px;
@@ -165,12 +151,7 @@ main{
     border: #1f1f1f solid 3px;
     padding: 25px 15px;
     text-align: center;
-}
-.contact-item:hover{
-    border: solid 3px #909090;
-    border-radius:50% ;
-    background-color: #909090;
-    box-sizing: border-box;
+    background-color: #d9e4e6;
 }
 .token:hover{
 
@@ -179,49 +160,19 @@ main{
 .token-item:hover{
     background-color: #666565;
 }
-.darkside{
-    height: 300px;
-    display: flex;
-    align-items: center;
-}
-.contacts{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-.hashtag-block{
-    border-top: 2px solid #1f1f1f;
-    border-bottom: 2px solid #1f1f1f;
-    padding: 30px 0;
-}
-.hashtags{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.hashtag-scroller{
-    overflow:hidden;
-}
-.hash-items{
-    font-size: 22px;
-    color: silver;
-    font-weight: 600;
-    height: 100%;
-    white-space:nowrap;
-    display:inline;
-    width:auto;
-}
+
+
 .properties{
     display: flex;
     align-items:stretch;
 }
 .prop-item{
+    height:100%;
     padding: 25px 15px;
     margin-top: 20px;
     border: #1f1f1f solid 1px;
-    height: 1000px;
+    background-color: #d9e4e6;
+      
 }
 .prop-item img{
     width: 100%;
@@ -231,31 +182,30 @@ main{
     font-size: 36px;
     color: #0F1C75;
     text-align: center;
+    padding: 7px 0;
 }
 .prop-description{
     padding: 20px 0px;
-    color: #ffff;
+    color: #1f262f;
     font-size: 18px;
     text-align: center;
     line-height: 1.5;
 }
-.giveaway-img{
-    width: 100%;
+.coin-description{
+    color: #1f262f;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 800;
+    padding: 15px 20px;
+    margin-top: 100px;
 }
-.giveaway-info-title{
-    font-size: 30px;
-    color: #ffff;
-    font-weight: 500;
+.coin-description p{
+    padding: 15px 10px;
+    height: 300px;
     text-align: center;
-    padding: 20px 0;
+    line-height: 2;
 }
-.giveaway-info{
-    font-size: 25px;
-    color: #ffff;
-    font-weight: 500;
-    text-align: center;
-    padding: 20px 0;
-}
+
 .dex{
     display: flex;
     justify-content: center;
@@ -263,30 +213,45 @@ main{
 .dex-guru{
     width: 100%;
     height: 950px;
+    margin-bottom: 30px;
 }
 footer{
     height: 150px;
-    background-color: silver;
+    background-color: #d9e4e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 20px;
 }
 footer p{
     text-align: center;
-    color: silver;
+    color: #1f262f;
     font-weight: 500;
     font-size: 16px;
+
+}
+.telegram-container{
+    display: flex;
+    align-items: center;
+}
+.telegram{
+    background-color: #4b4b4b;;
+    line-height: 120px;
+    border-radius: 5px;
+    height: 65px;
 
 }
 .switcher{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .switchers{
     display: flex;
     align-items: center;
     background-color: #4b4b4b;
-    padding: 10px 5px;
+    height: 65px;
+    padding: 15px 5px;
     border-radius: 5px;
 }
 .switch-btn
