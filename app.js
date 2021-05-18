@@ -43,36 +43,25 @@ let sliderRoundLeft = document.querySelector(".slider-round-left");
 let body = document.querySelector("main")
 let footer = document.querySelector("footer")
 let text = document.querySelectorAll(".text")
-let link = document.querySelectorAll(".link")
 let description = document.querySelectorAll(".description")
-console.log(link)
+let footerText = document.querySelectorAll(".footer-text")
+console.log(footerText)
 switchButton.addEventListener('click',function(){
     if(sliderRoundLeft.classList.contains("slider-round-left"))
     {
         sliderRoundLeft.classList.remove("slider-round-left")
         sliderRoundLeft.classList.add("slider-round-right")
-        body.setAttribute("style", "background-color:#3d444d; ");
+        body.setAttribute("style", "background-color:#181d23; ");
         for(let i=0;i<text.length;i++){
             text[i].setAttribute("style","color :#4b4b4b")
         }
-        for(let i=0;i<description.length;i++){
-            description[i].setAttribute("style","color :#ffffff")
-        }
-        footer.setAttribute("style", "background-color:#3d444d; ");
-        for(let i=0;i<link.length;i++){
-            link[i].setAttribute("style","color :#4b4b4b")
-        }
+        footer.setAttribute("style", "background-color:#181d23;");
     }
     else
     {
-
         sliderRoundLeft.classList.add("slider-round-left");
         sliderRoundLeft.classList.remove("slider-round-right");
         body.setAttribute("style", "background-color: rgb(238, 238, 238); ");
-        footer.setAttribute("style", "background-color: rgb(238, 238, 238); ");
-        for(let i=0;i<description.length;i++){
-            description[i].setAttribute("style","color :#1f262f")
-        }
     }
 })
 
@@ -103,7 +92,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
+        dots:true
 });
 });
               
