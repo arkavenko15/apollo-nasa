@@ -43,7 +43,6 @@ let sliderRoundLeft = document.querySelector(".slider-round-left");
 let body = document.querySelector("main")
 let footer = document.querySelector("footer")
 let text = document.querySelectorAll(".text")
-let description = document.querySelectorAll(".description")
 let footerText = document.querySelectorAll(".footer-text")
 console.log(footerText)
 switchButton.addEventListener('click',function(){
