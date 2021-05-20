@@ -210,10 +210,13 @@ footer p{
 .telegram-container{
     display: flex;
     align-items: center;
+    height: 66px;
+}
+.telegram-container a{
+    height: 65px;
 }
 .telegram{
     background-color: #909090;;
-    line-height: 120px;
     border-radius: 5px;
     height: 65px;
 
@@ -221,8 +224,13 @@ footer p{
 .telegram-container:hover{
     text-shadow: #d9e4e6 0 0 1em;
 }
+.header-row{
+    display: flex;
+    align-items: center;
+}
 .switcher{
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -413,7 +421,14 @@ footer p{
     .prop-description{
         font-size: 34px;
     }
-
+    .telegram{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .switchers{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
 } 
 
 @media(min-width:576px)  
