@@ -96,4 +96,20 @@ $(document).ready(function(){
 });
 });
               
+// MOBILE MENU
 
+let mobileMenu = document.querySelector(".mobile-menu")
+let activeMenu = document.querySelector(".active-menu")
+activeMenu.addEventListener("click" ,function(){
+    activeMenu.classList.toggle("visible-menu")
+    if(activeMenu.classList.contains("visible-menu")){
+        mobileMenu.setAttribute("style", "display:block")
+    }else{
+        mobileMenu.setAttribute("style", "display:none")
+    }
+})
+if(activeMenu.classList.contains("visible-menu")){
+    mobileMenu.setAttribute("style", "display:block")
+}else{
+    mobileMenu.setAttribute("style", "display:none")
+}
